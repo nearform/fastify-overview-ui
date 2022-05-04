@@ -32,7 +32,7 @@
     "vite": "^2.6.4"
   },
   "description": "UI for fastify-overview",
-  "main": "index.html",
+  "main": "/src/App.jsx",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/raul-saez/fastify-overview-ui.git"
