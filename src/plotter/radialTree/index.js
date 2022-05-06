@@ -140,9 +140,12 @@ export function drawLabels (
       setCurrentNode('')
       d3.select(this).transition().duration(100).attr('opacity', 1)
     })
-    // .on('click', function (e, d) {
-    //   console.log(d.data);
-    // })
+    .on('click', function (e, d) {
+      if (d.data.source) {
+        const { fileName, lineNumber, columnNumber } = d.data.source
+        window.location.href = `vscode://file${fileName}:${lineNumber}:${columnNumber}`
+      }
+    })
     // .on("mouseover", function (this, e, d) {
     //   setCurrentNode(d.data);
     //   d3.select(this).transition().duration(200).attr("opacity", 0.5);
