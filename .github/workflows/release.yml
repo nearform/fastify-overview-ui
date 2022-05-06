@@ -19,11 +19,12 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - name: Build the application
-        run: npm run build
       - uses: nearform/optic-release-automation-action@v2
         with:
           github-token: ${{ secrets.github_token }}
           semver: ${{ github.event.inputs.semver }}
           npm-token: ${{ secrets[format('NPM_TOKEN_{0}', github.actor)] || secrets.NPM_TOKEN }}
           optic-token: ${{ secrets[format('OPTIC_TOKEN_{0}', github.actor)] || secrets.OPTIC_TOKEN }}
+          build-command: |
+            npm install
+            npm run build
