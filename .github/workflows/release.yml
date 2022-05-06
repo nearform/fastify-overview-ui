@@ -19,6 +19,8 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
+      - name: Build the application
+        run: npm run build
       - uses: nearform/optic-release-automation-action@v2
         with:
           github-token: ${{ secrets.github_token }}
