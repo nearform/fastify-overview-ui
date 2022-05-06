@@ -29,12 +29,12 @@
   "main": "dist",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/raul-saez/fastify-overview-ui.git"
+    "url": "git+https://github.com/nearform/fastify-overview-ui.git"
   },
-  "author": "raul-saez",
+  "author": "nearform",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/raul-saez/fastify-overview-ui/issues"
+    "url": "https://github.com/nearform/fastify-overview-ui/issues"
   },
-  "homepage": "https://github.com/raul-saez/fastify-overview-ui#readme"
+  "homepage": "https://github.com/nearform/fastify-overview-ui#readme"
 }
