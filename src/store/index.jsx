@@ -18,20 +18,3 @@ export const OverviewProvider = ({ children }) => {
 }
 
 export const useOverview = () => useContext(OverviewContext)
-
-// reducers: {
-//   startLoading: (state) => {
-//     state.isLoading = true
-//   },
-//   load: (state, action) => {
-//     state.value = action.payload
-//   },
-//   loadSuccess: (state, action) => {
-//     state.value = action.payload
-//     state.isLoading = false
-//   },
-//   loadErrors: (state, action) => {
-//     state.errors = action.payload
-//     state.isLoading = false
-//   }
-// }

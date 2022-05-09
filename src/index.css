@@ -28,6 +28,10 @@ button {
   background-color: var(--colors-gray-50);
 }
 
+.bg-gray-100 {
+  background-color: var(--colors-gray-100);
+}
+
 /* Layout */
 .flex {
   display: flex;

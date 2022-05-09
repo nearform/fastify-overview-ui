@@ -144,12 +144,13 @@ export function drawLabels (
       if (d.data.source) {
         const { fileName, lineNumber, columnNumber } = d.data.source
         window.location.href = `vscode://file${fileName}:${lineNumber}:${columnNumber}`
+        // window.location.href = `mvim://open?url=file://${fileName}&line=${lineNumber}&column=${columnNumber}` // MacVIM
       }
     })
-    // .on("mouseover", function (this, e, d) {
-    //   setCurrentNode(d.data);
-    //   d3.select(this).transition().duration(200).attr("opacity", 0.5);
-    // })
+    .on("mouseover", function (t, d) {
+      setCurrentNode(d.data);
+      d3.select(this).transition().duration(200).attr("opacity", 0.5);
+    })
 
     .transition()
     .duration(100)
