@@ -147,9 +147,9 @@ export function drawLabels (
         // window.location.href = `mvim://open?url=file://${fileName}&line=${lineNumber}&column=${columnNumber}` // MacVIM
       }
     })
-    .on("mouseover", function (t, d) {
-      setCurrentNode(d.data);
-      d3.select(this).transition().duration(200).attr("opacity", 0.5);
+    .on('mouseover', function (t, d) {
+      setCurrentNode(d.data)
+      d3.select(this).transition().duration(200).attr('opacity', 0.5)
     })
 
     .transition()
