@@ -10,7 +10,9 @@ export default function useGraphData (data) {
   })
 
   const chartData = useMemo(() => {
-    return transformData(data, filters)
+    if (data) {
+      return transformData(data, filters)
+    }
   }, [data, filters])
 
   return {

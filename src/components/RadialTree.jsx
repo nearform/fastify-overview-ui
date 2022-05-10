@@ -48,6 +48,8 @@ export default function RadialTree ({
     }
   }, [svgRef.current, chartData, size])
 
+  if (!chartData) return null
+
   return (
     <>
       <div className={'flex flex-col inner-shadow bg-gray-800 ' + className}>
