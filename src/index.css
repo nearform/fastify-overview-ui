@@ -49,26 +49,6 @@ button {
   position: absolute;
 }
 
-.fixed {
-  position: fixed;
-}
-
-.left-0 {
-  left: 0;
-}
-
-.right-0 {
-  right: 0;
-}
-
-.top-0 {
-  top: 0;
-}
-
-.top-half {
-  top: 50%;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
@@ -105,10 +85,6 @@ button {
   width: 1.5rem;
 }
 
-.w-80 {
-  width: 20rem;
-}
-
 .h-screen {
   height: 100vh;
 }
@@ -127,14 +103,6 @@ button {
 
 .h-8 {
   height: 2rem;
-}
-
-.h-40 {
-  height: 10rem;
-}
-
-.translateY-half {
-  transform: translateY(-50%);
 }
 
 /* Typography */
@@ -191,10 +159,6 @@ button {
 
 .mr-3 {
   margin-right: 0.75rem;
-}
-
-.m-auto {
-  margin: 0 auto;
 }
 
 /* Borders */
