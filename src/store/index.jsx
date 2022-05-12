@@ -9,8 +9,8 @@ export const OverviewProvider = ({ children }) => {
     errors: null
   })
 
-  const fetchOverview = async () => {
-    const data = await fetch(`${window.location.origin}/json-overview`).then(response => response.json()).catch(error => console.log(error))
+  const fetchOverview = () => {
+    const data = fetch(`${window.location.origin}/json-overview`).then(response => response.json()).catch(error => console.log(error))
 
     if (data) {
       setOverview({
