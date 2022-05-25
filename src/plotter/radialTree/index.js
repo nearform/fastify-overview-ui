@@ -140,13 +140,17 @@ export function drawLabels (
       setCurrentNode('')
       d3.select(this).transition().duration(100).attr('opacity', 1)
     })
-    // .on('click', function (e, d) {
-    //   console.log(d.data);
-    // })
-    // .on("mouseover", function (this, e, d) {
-    //   setCurrentNode(d.data);
-    //   d3.select(this).transition().duration(200).attr("opacity", 0.5);
-    // })
+    .on('click', function (e, d) {
+      if (d.data.source) {
+        const { fileName, lineNumber, columnNumber } = d.data.source
+        window.location.href = `vscode://file${fileName}:${lineNumber}:${columnNumber}`
+        // window.location.href = `mvim://open?url=file://${fileName}&line=${lineNumber}&column=${columnNumber}` // MacVIM
+      }
+    })
+    .on('mouseover', function (t, d) {
+      setCurrentNode(d.data)
+      d3.select(this).transition().duration(200).attr('opacity', 0.5)
+    })
 
     .transition()
     .duration(100)

@@ -51,7 +51,7 @@ export default function RadialTree ({
   return (
     <>
       <div className={'flex flex-col inner-shadow bg-gray-800 ' + className}>
-        <div className='absolute bottom-0 bg-current p-1'>
+        <div className='absolute bottom-0 bg-gray-100 p-1'>
           {currentNode?.name} {JSON.stringify(currentNode.type)}
         </div>
         <svg ref={svgRef} className='flex-grow bg-gray-50 '>

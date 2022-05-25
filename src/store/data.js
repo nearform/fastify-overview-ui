@@ -3,7 +3,7 @@ export default {
   name: 'plugin-auto-0 -> fastify-overview',
   children: [
     {
-      id: 0.17587210817615806,
+      id: 0.7136822580629625,
       name: '/Users/raulsaez/dev/covid-green-backend-api/node_modules/fastify-swagger/lib/routes.js',
       children: [],
       routes: [
@@ -21,6 +21,15 @@ export default {
             onSend: [],
             onResponse: [],
             onTimeout: []
+          },
+          source: {
+            stackIndex: 0,
+            fileName: 'node:internal/process/task_queues',
+            lineNumber: 82,
+            columnNumber: 21,
+            functionName: 'processTicksAndRejections',
+            typeName: 'process',
+            methodName: null
           }
         },
         {
@@ -37,6 +46,15 @@ export default {
             onSend: [],
             onResponse: [],
             onTimeout: []
+          },
+          source: {
+            stackIndex: 0,
+            fileName: 'node:internal/process/task_queues',
+            lineNumber: 82,
+            columnNumber: 21,
+            functionName: 'processTicksAndRejections',
+            typeName: 'process',
+            methodName: null
           }
         },
         {
@@ -53,6 +71,15 @@ export default {
             onSend: [],
             onResponse: [],
             onTimeout: []
+          },
+          source: {
+            stackIndex: 0,
+            fileName: 'node:internal/process/task_queues',
+            lineNumber: 82,
+            columnNumber: 21,
+            functionName: 'processTicksAndRejections',
+            typeName: 'process',
+            methodName: null
           }
         },
         {
@@ -69,6 +96,15 @@ export default {
             onSend: [],
             onResponse: [],
             onTimeout: []
+          },
+          source: {
+            stackIndex: 0,
+            fileName: 'node:internal/process/task_queues',
+            lineNumber: 82,
+            columnNumber: 21,
+            functionName: 'processTicksAndRejections',
+            typeName: 'process',
+            methodName: null
           }
         },
         {
@@ -85,6 +121,15 @@ export default {
             onSend: [],
             onResponse: [],
             onTimeout: []
+          },
+          source: {
+            stackIndex: 0,
+            fileName: 'node:internal/process/task_queues',
+            lineNumber: 82,
+            columnNumber: 21,
+            functionName: 'processTicksAndRejections',
+            typeName: 'process',
+            methodName: null
           }
         },
         {
@@ -101,6 +146,15 @@ export default {
             onSend: [],
             onResponse: [],
             onTimeout: []
+          },
+          source: {
+            stackIndex: 0,
+            fileName: 'node:internal/process/task_queues',
+            lineNumber: 82,
+            columnNumber: 21,
+            functionName: 'processTicksAndRejections',
+            typeName: 'process',
+            methodName: null
           }
         },
         {
@@ -117,6 +171,15 @@ export default {
             onSend: [],
             onResponse: [],
             onTimeout: []
+          },
+          source: {
+            stackIndex: 0,
+            fileName: 'node:internal/process/task_queues',
+            lineNumber: 82,
+            columnNumber: 21,
+            functionName: 'processTicksAndRejections',
+            typeName: 'process',
+            methodName: null
           }
         },
         {
@@ -133,6 +196,15 @@ export default {
             onSend: [],
             onResponse: [],
             onTimeout: []
+          },
+          source: {
+            stackIndex: 0,
+            fileName: 'node:internal/process/task_queues',
+            lineNumber: 82,
+            columnNumber: 21,
+            functionName: 'processTicksAndRejections',
+            typeName: 'process',
+            methodName: null
           }
         }
       ],
@@ -141,10 +213,28 @@ export default {
         decorateRequest: [],
         decorateReply: [
           {
-            name: 'sendFile'
+            name: 'sendFile',
+            source: {
+              stackIndex: 0,
+              fileName: 'node:internal/process/task_queues',
+              lineNumber: 82,
+              columnNumber: 21,
+              functionName: 'processTicksAndRejections',
+              typeName: 'process',
+              methodName: null
+            }
           },
           {
-            name: 'download'
+            name: 'download',
+            source: {
+              stackIndex: 0,
+              fileName: 'node:internal/process/task_queues',
+              lineNumber: 82,
+              columnNumber: 21,
+              functionName: 'processTicksAndRejections',
+              typeName: 'process',
+              methodName: null
+            }
           }
         ]
       },
@@ -161,7 +251,16 @@ export default {
         onReady: [
           {
             name: 'Anonymous function',
-            hash: 'c225eeb5342de89fa82c30a98afd66e4498f6bf7'
+            hash: 'hash',
+            source: {
+              stackIndex: 0,
+              fileName: 'node:internal/process/task_queues',
+              lineNumber: 82,
+              columnNumber: 21,
+              functionName: 'processTicksAndRejections',
+              typeName: 'process',
+              methodName: null
+            }
           }
         ],
         onClose: [],
@@ -185,6 +284,15 @@ export default {
         onSend: [],
         onResponse: [],
         onTimeout: []
+      },
+      source: {
+        stackIndex: 0,
+        fileName: 'node:internal/process/task_queues',
+        lineNumber: 82,
+        columnNumber: 21,
+        functionName: 'processTicksAndRejections',
+        typeName: 'process',
+        methodName: null
       }
     },
     {
@@ -202,195 +310,13 @@ export default {
         onResponse: [],
         onTimeout: []
       },
-      souce: {
+      source: {
         stackIndex: 0,
         fileName:
           '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/callback/index.js',
-        lineNumber: 101,
+        lineNumber: 106,
         columnNumber: 12,
         functionName: 'callback',
-        typeName: null,
-        methodName: null
-      }
-    },
-    {
-      method: 'POST',
-      url: '/check-in',
-      prefix: '',
-      hooks: {
-        onRequest: [],
-        preParsing: [],
-        preValidation: [],
-        preHandler: [],
-        preSerialization: [],
-        onError: [],
-        onSend: [],
-        onResponse: [],
-        onTimeout: []
-      },
-      souce: {
-        stackIndex: 0,
-        fileName:
-          '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/check-in/index.js',
-        lineNumber: 19,
-        columnNumber: 12,
-        functionName: 'checkIn',
-        typeName: null,
-        methodName: null
-      }
-    },
-    {
-      method: 'GET',
-      url: '/healthcheck',
-      prefix: '',
-      hooks: {
-        onRequest: [],
-        preParsing: [],
-        preValidation: [],
-        preHandler: [],
-        preSerialization: [],
-        onError: [],
-        onSend: [],
-        onResponse: [],
-        onTimeout: []
-      },
-      souce: {
-        stackIndex: 0,
-        fileName:
-          '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/health/index.js',
-        lineNumber: 8,
-        columnNumber: 10,
-        functionName: 'health',
-        typeName: null,
-        methodName: null
-      }
-    },
-    {
-      method: 'POST',
-      url: '/metrics',
-      prefix: '',
-      hooks: {
-        onRequest: [],
-        preParsing: [],
-        preValidation: [],
-        preHandler: [],
-        preSerialization: [],
-        onError: [],
-        onSend: [],
-        onResponse: [],
-        onTimeout: []
-      },
-      souce: {
-        stackIndex: 0,
-        fileName:
-          '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/metrics/index.js',
-        lineNumber: 44,
-        columnNumber: 12,
-        functionName: 'metrics',
-        typeName: null,
-        methodName: null
-      }
-    },
-    {
-      method: 'POST',
-      url: '/notices/create',
-      prefix: '',
-      hooks: {
-        onRequest: [],
-        preParsing: [],
-        preValidation: [],
-        preHandler: [],
-        preSerialization: [],
-        onError: [],
-        onSend: [],
-        onResponse: [],
-        onTimeout: []
-      },
-      souce: {
-        stackIndex: 0,
-        fileName:
-          '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/notices/index.js',
-        lineNumber: 128,
-        columnNumber: 10,
-        functionName: 'notices',
-        typeName: null,
-        methodName: null
-      }
-    },
-    {
-      method: 'PUT',
-      url: '/notices/create',
-      prefix: '',
-      hooks: {
-        onRequest: [],
-        preParsing: [],
-        preValidation: [],
-        preHandler: [],
-        preSerialization: [],
-        onError: [],
-        onSend: [],
-        onResponse: [],
-        onTimeout: []
-      },
-      souce: {
-        stackIndex: 0,
-        fileName:
-          '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/notices/index.js',
-        lineNumber: 165,
-        columnNumber: 10,
-        functionName: 'notices',
-        typeName: null,
-        methodName: null
-      }
-    },
-    {
-      method: 'POST',
-      url: '/notices/validate',
-      prefix: '',
-      hooks: {
-        onRequest: [],
-        preParsing: [],
-        preValidation: [],
-        preHandler: [],
-        preSerialization: [],
-        onError: [],
-        onSend: [],
-        onResponse: [],
-        onTimeout: []
-      },
-      souce: {
-        stackIndex: 0,
-        fileName:
-          '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/notices/index.js',
-        lineNumber: 206,
-        columnNumber: 10,
-        functionName: 'notices',
-        typeName: null,
-        methodName: null
-      }
-    },
-    {
-      method: 'POST',
-      url: '/notices/send',
-      prefix: '',
-      hooks: {
-        onRequest: [],
-        preParsing: [],
-        preValidation: [],
-        preHandler: [],
-        preSerialization: [],
-        onError: [],
-        onSend: [],
-        onResponse: [],
-        onTimeout: []
-      },
-      souce: {
-        stackIndex: 0,
-        fileName:
-          '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/notices/index.js',
-        lineNumber: 239,
-        columnNumber: 10,
-        functionName: 'notices',
         typeName: null,
         methodName: null
       }
@@ -410,9 +336,10 @@ export default {
         onResponse: [],
         onTimeout: []
       },
-      souce: {
+      source: {
         stackIndex: 0,
-        fileName: '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/data/index.js',
+        fileName:
+          '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/data/index.js',
         lineNumber: 49,
         columnNumber: 10,
         functionName: 'data',
@@ -435,9 +362,10 @@ export default {
         onResponse: [],
         onTimeout: []
       },
-      souce: {
+      source: {
         stackIndex: 0,
-        fileName: '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/data/index.js',
+        fileName:
+          '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/data/index.js',
         lineNumber: 57,
         columnNumber: 10,
         functionName: 'data',
@@ -460,9 +388,10 @@ export default {
         onResponse: [],
         onTimeout: []
       },
-      souce: {
+      source: {
         stackIndex: 0,
-        fileName: '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/data/index.js',
+        fileName:
+          '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/data/index.js',
         lineNumber: 71,
         columnNumber: 10,
         functionName: 'data',
@@ -485,9 +414,10 @@ export default {
         onResponse: [],
         onTimeout: []
       },
-      souce: {
+      source: {
         stackIndex: 0,
-        fileName: '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/data/index.js',
+        fileName:
+          '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/data/index.js',
         lineNumber: 79,
         columnNumber: 10,
         functionName: 'data',
@@ -510,12 +440,39 @@ export default {
         onResponse: [],
         onTimeout: []
       },
-      souce: {
+      source: {
         stackIndex: 0,
-        fileName: '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/data/index.js',
+        fileName:
+          '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/data/index.js',
         lineNumber: 89,
         columnNumber: 10,
         functionName: 'data',
+        typeName: null,
+        methodName: null
+      }
+    },
+    {
+      method: 'POST',
+      url: '/check-in',
+      prefix: '',
+      hooks: {
+        onRequest: [],
+        preParsing: [],
+        preValidation: [],
+        preHandler: [],
+        preSerialization: [],
+        onError: [],
+        onSend: [],
+        onResponse: [],
+        onTimeout: []
+      },
+      source: {
+        stackIndex: 0,
+        fileName:
+          '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/check-in/index.js',
+        lineNumber: 19,
+        columnNumber: 12,
+        functionName: 'checkIn',
         typeName: null,
         methodName: null
       }
@@ -535,7 +492,7 @@ export default {
         onResponse: [],
         onTimeout: []
       },
-      souce: {
+      source: {
         stackIndex: 0,
         fileName:
           '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/exposures/index.js',
@@ -561,7 +518,7 @@ export default {
         onResponse: [],
         onTimeout: []
       },
-      souce: {
+      source: {
         stackIndex: 0,
         fileName:
           '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/exposures/index.js',
@@ -587,7 +544,7 @@ export default {
         onResponse: [],
         onTimeout: []
       },
-      souce: {
+      source: {
         stackIndex: 0,
         fileName:
           '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/exposures/index.js',
@@ -613,7 +570,7 @@ export default {
         onResponse: [],
         onTimeout: []
       },
-      souce: {
+      source: {
         stackIndex: 0,
         fileName:
           '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/exposures/index.js',
@@ -639,7 +596,7 @@ export default {
         onResponse: [],
         onTimeout: []
       },
-      souce: {
+      source: {
         stackIndex: 0,
         fileName:
           '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/exposures/index.js',
@@ -665,7 +622,7 @@ export default {
         onResponse: [],
         onTimeout: []
       },
-      souce: {
+      source: {
         stackIndex: 0,
         fileName:
           '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/exposures/index.js',
@@ -691,13 +648,143 @@ export default {
         onResponse: [],
         onTimeout: []
       },
-      souce: {
+      source: {
         stackIndex: 0,
         fileName:
           '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/exposures/index.js',
         lineNumber: 714,
         columnNumber: 10,
         functionName: 'exposures',
+        typeName: null,
+        methodName: null
+      }
+    },
+    {
+      method: 'POST',
+      url: '/metrics',
+      prefix: '',
+      hooks: {
+        onRequest: [],
+        preParsing: [],
+        preValidation: [],
+        preHandler: [],
+        preSerialization: [],
+        onError: [],
+        onSend: [],
+        onResponse: [],
+        onTimeout: []
+      },
+      source: {
+        stackIndex: 0,
+        fileName:
+          '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/metrics/index.js',
+        lineNumber: 44,
+        columnNumber: 12,
+        functionName: 'metrics',
+        typeName: null,
+        methodName: null
+      }
+    },
+    {
+      method: 'POST',
+      url: '/notices/create',
+      prefix: '',
+      hooks: {
+        onRequest: [],
+        preParsing: [],
+        preValidation: [],
+        preHandler: [],
+        preSerialization: [],
+        onError: [],
+        onSend: [],
+        onResponse: [],
+        onTimeout: []
+      },
+      source: {
+        stackIndex: 0,
+        fileName:
+          '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/notices/index.js',
+        lineNumber: 128,
+        columnNumber: 10,
+        functionName: 'notices',
+        typeName: null,
+        methodName: null
+      }
+    },
+    {
+      method: 'PUT',
+      url: '/notices/create',
+      prefix: '',
+      hooks: {
+        onRequest: [],
+        preParsing: [],
+        preValidation: [],
+        preHandler: [],
+        preSerialization: [],
+        onError: [],
+        onSend: [],
+        onResponse: [],
+        onTimeout: []
+      },
+      source: {
+        stackIndex: 0,
+        fileName:
+          '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/notices/index.js',
+        lineNumber: 165,
+        columnNumber: 10,
+        functionName: 'notices',
+        typeName: null,
+        methodName: null
+      }
+    },
+    {
+      method: 'POST',
+      url: '/notices/validate',
+      prefix: '',
+      hooks: {
+        onRequest: [],
+        preParsing: [],
+        preValidation: [],
+        preHandler: [],
+        preSerialization: [],
+        onError: [],
+        onSend: [],
+        onResponse: [],
+        onTimeout: []
+      },
+      source: {
+        stackIndex: 0,
+        fileName:
+          '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/notices/index.js',
+        lineNumber: 206,
+        columnNumber: 10,
+        functionName: 'notices',
+        typeName: null,
+        methodName: null
+      }
+    },
+    {
+      method: 'POST',
+      url: '/notices/send',
+      prefix: '',
+      hooks: {
+        onRequest: [],
+        preParsing: [],
+        preValidation: [],
+        preHandler: [],
+        preSerialization: [],
+        onError: [],
+        onSend: [],
+        onResponse: [],
+        onTimeout: []
+      },
+      source: {
+        stackIndex: 0,
+        fileName:
+          '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/notices/index.js',
+        lineNumber: 239,
+        columnNumber: 10,
+        functionName: 'notices',
         typeName: null,
         methodName: null
       }
@@ -717,7 +804,7 @@ export default {
         onResponse: [],
         onTimeout: []
       },
-      souce: {
+      source: {
         stackIndex: 0,
         fileName:
           '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/qr-code/index.js',
@@ -743,7 +830,7 @@ export default {
         onResponse: [],
         onTimeout: []
       },
-      souce: {
+      source: {
         stackIndex: 0,
         fileName:
           '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/qr-code/index.js',
@@ -769,7 +856,7 @@ export default {
         onResponse: [],
         onTimeout: []
       },
-      souce: {
+      source: {
         stackIndex: 0,
         fileName:
           '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/qr-code/index.js',
@@ -795,7 +882,7 @@ export default {
         onResponse: [],
         onTimeout: []
       },
-      souce: {
+      source: {
         stackIndex: 0,
         fileName:
           '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/qr-code/index.js',
@@ -821,7 +908,7 @@ export default {
         onResponse: [],
         onTimeout: []
       },
-      souce: {
+      source: {
         stackIndex: 0,
         fileName:
           '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/qr-code/index.js',
@@ -847,7 +934,7 @@ export default {
         onResponse: [],
         onTimeout: []
       },
-      souce: {
+      source: {
         stackIndex: 0,
         fileName:
           '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/qr-code/index.js',
@@ -873,7 +960,7 @@ export default {
         onResponse: [],
         onTimeout: []
       },
-      souce: {
+      source: {
         stackIndex: 0,
         fileName:
           '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/register/index.js',
@@ -899,7 +986,7 @@ export default {
         onResponse: [],
         onTimeout: []
       },
-      souce: {
+      source: {
         stackIndex: 0,
         fileName:
           '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/register/index.js',
@@ -925,7 +1012,7 @@ export default {
         onResponse: [],
         onTimeout: []
       },
-      souce: {
+      source: {
         stackIndex: 0,
         fileName:
           '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/register/index.js',
@@ -951,7 +1038,7 @@ export default {
         onResponse: [],
         onTimeout: []
       },
-      souce: {
+      source: {
         stackIndex: 0,
         fileName:
           '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/register/index.js',
@@ -961,66 +1048,99 @@ export default {
         typeName: null,
         methodName: null
       }
+    },
+    {
+      method: 'GET',
+      url: '/healthcheck',
+      prefix: '',
+      hooks: {
+        onRequest: [],
+        preParsing: [],
+        preValidation: [],
+        preHandler: [],
+        preSerialization: [],
+        onError: [],
+        onSend: [],
+        onResponse: [],
+        onTimeout: []
+      },
+      source: {
+        stackIndex: 0,
+        fileName:
+          '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/health/index.js',
+        lineNumber: 8,
+        columnNumber: 10,
+        functionName: 'health',
+        typeName: null,
+        methodName: null
+      }
     }
   ],
   decorators: {
     decorate: [
       {
-        name: 'jwt'
-      },
-      {
-        name: 'pg'
-      },
-      {
-        name: 'swagger'
-      },
-      {
-        name: 'swaggerCSP'
-      }
-    ],
-    decorateRequest: [
-      {
-        name: 'corsPreflightEnabled'
-      },
-      {
-        name: 'authenticate',
-        souce: {
+        name: 'swagger',
+        source: {
           stackIndex: 0,
-          fileName:
-            '/Users/raulsaez/dev/covid-green-backend-api/lib/plugins/jwt/index.js',
-          lineNumber: 28,
-          columnNumber: 10,
-          functionName: 'jwt',
-          typeName: null,
+          fileName: 'node:internal/process/task_queues',
+          lineNumber: 82,
+          columnNumber: 21,
+          functionName: 'processTicksAndRejections',
+          typeName: 'process',
           methodName: null
         }
       },
       {
-        name: 'user'
-      },
-      {
-        name: 'jwtVerify'
-      },
-      {
-        name: 'pg'
-      },
-      {
-        name: 'verify',
-        souce: {
+        name: 'swaggerCSP',
+        source: {
           stackIndex: 0,
-          fileName:
-            '/Users/raulsaez/dev/covid-green-backend-api/lib/plugins/verify/index.js',
-          lineNumber: 22,
-          columnNumber: 10,
-          functionName: 'verify',
-          typeName: null,
+          fileName: 'node:internal/process/task_queues',
+          lineNumber: 82,
+          columnNumber: 21,
+          functionName: 'processTicksAndRejections',
+          typeName: 'process',
+          methodName: null
+        }
+      }
+    ],
+    decorateRequest: [
+      {
+        name: 'corsPreflightEnabled',
+        source: {
+          stackIndex: 0,
+          fileName: 'node:internal/process/task_queues',
+          lineNumber: 82,
+          columnNumber: 21,
+          functionName: 'processTicksAndRejections',
+          typeName: 'process',
           methodName: null
         }
       }
     ],
     decorateReply: [
       {
-        name: 'jwtSign'
+        name: 'sendFile',
+        source: {
+          stackIndex: 0,
+          fileName: 'node:internal/process/task_queues',
+          lineNumber: 82,
+          columnNumber: 21,
+          functionName: 'processTicksAndRejections',
+          typeName: 'process',
+          methodName: null
+        }
+      },
+      {
+        name: 'download',
+        source: {
+          stackIndex: 0,
+          fileName: 'node:internal/process/task_queues',
+          lineNumber: 82,
+          columnNumber: 21,
+          functionName: 'processTicksAndRejections',
+          typeName: 'process',
+          methodName: null
+        }
       }
     ]
   },
@@ -1028,18 +1148,14 @@ export default {
     onRequest: [
       {
         name: 'Anonymous function',
-        hash: 'f52de1b067d560360cc4a62ad2d2b1b75030bcd6'
-      },
-      {
-        name: 'Anonymous function',
-        hash: 'c62a662aa60c62c930f3110c530e0334a2c68ecc',
+        hash: 'hash',
         source: {
           stackIndex: 0,
-          fileName: '/Users/raulsaez/dev/covid-green-backend-api/lib/server.js',
-          lineNumber: 34,
-          columnNumber: 10,
-          functionName: 'plugin',
-          typeName: null,
+          fileName: 'node:internal/process/task_queues',
+          lineNumber: 82,
+          columnNumber: 21,
+          functionName: 'processTicksAndRejections',
+          typeName: 'process',
           methodName: null
         }
       }
@@ -1049,80 +1165,54 @@ export default {
     preHandler: [],
     preSerialization: [],
     onError: [],
-    onSend: [
-      {
-        name: 'Anonymous function',
-        hash: '70b604c0911c845879d6d955b147d4a05ca259e5',
-        source: {
-          stackIndex: 0,
-          fileName: '/Users/raulsaez/dev/covid-green-backend-api/lib/server.js',
-          lineNumber: 42,
-          columnNumber: 10,
-          functionName: 'plugin',
-          typeName: null,
-          methodName: null
-        }
-      }
-    ],
-    onResponse: [
-      {
-        name: 'Anonymous function',
-        hash: 'e03afb50778a3463fb72e1d1d97e3b5c22c2fcea',
-        source: {
-          stackIndex: 0,
-          fileName: '/Users/raulsaez/dev/covid-green-backend-api/lib/server.js',
-          lineNumber: 38,
-          columnNumber: 10,
-          functionName: 'plugin',
-          typeName: null,
-          methodName: null
-        }
-      }
-    ],
+    onSend: [],
+    onResponse: [],
     onTimeout: [],
     onReady: [
       {
         name: 'showStructure',
-        hash: '698dfa1d761a8d7bb8851a6b530e7ce844a45014',
+        hash: 'hash',
         source: {
           stackIndex: 0,
-          fileName: '/Users/raulsaez/dev/covid-green-backend-api/lib/server.js',
-          lineNumber: 65,
+          fileName:
+            '/Users/raulsaez/dev/covid-green-backend-api/lib/routes/callback/index.js',
+          lineNumber: 64,
           columnNumber: 10,
-          functionName: 'plugin',
+          functionName: 'callback',
           typeName: null,
           methodName: null
         }
       }
     ],
-    onClose: [
-      {
-        name: 'Anonymous function',
-        hash: '5df2616270625331cd6afb10bb3d364315463091'
-      },
-      {
-        name: 'Anonymous function',
-        hash: '5df2616270625331cd6afb10bb3d364315463091'
-      }
-    ],
+    onClose: [],
     onRoute: [
       {
         name: 'Anonymous function',
-        hash: '8f762a16acb2c21965a345e2d9c807c68a2812ad'
-      },
-      {
-        name: 'Anonymous function',
-        hash: '8f762a16acb2c21965a345e2d9c807c68a2812ad'
-      },
-      {
-        name: 'Anonymous function',
-        hash: '51a83f3451bad88f04085eb89749ab9d3757aaae'
+        hash: 'hash',
+        source: {
+          stackIndex: 0,
+          fileName: 'node:internal/process/task_queues',
+          lineNumber: 82,
+          columnNumber: 21,
+          functionName: 'processTicksAndRejections',
+          typeName: 'process',
+          methodName: null
+        }
       }
     ],
     onRegister: [
       {
         name: 'Anonymous function',
-        hash: '5f048db1d0a74ebd1e276157ea71ea75423a42ac'
+        hash: 'hash',
+        source: {
+          stackIndex: 0,
+          fileName: 'node:internal/process/task_queues',
+          lineNumber: 82,
+          columnNumber: 21,
+          functionName: 'processTicksAndRejections',
+          typeName: 'process',
+          methodName: null
+        }
       }
     ]
   }

@@ -28,9 +28,10 @@ function convertHooks (hooks) {
     .map((key) => ({
       type: HOOKTYPE,
       name: key,
-      children: hooks[key].map((name) => ({
+      children: hooks[key].map((hook) => ({
         type: HOOK,
-        name: name.name ?? name, // Victim of current data structure: Hooks are returned as array of strings and array of objects
+        name: hook.name ?? hook, // Victim of current data structure: Hooks are returned as array of strings and array of objects
+        source: hook.source,
         children: []
       }))
     }))
@@ -42,9 +43,10 @@ function convertDecorators (decorators) {
     .map((key) => ({
       type: DECORATORTYPE,
       name: key,
-      children: decorators[key].map((name) => ({
+      children: decorators[key].map((decorator) => ({
         type: DECORATOR,
-        name: name.name ?? name,
+        name: decorator.name ?? decorator,
+        source: decorator.source,
         children: []
       }))
     }))
@@ -55,6 +57,7 @@ function convertRoutes (routes) {
   return routes.map((route) => ({
     type: ROUTE,
     name: route.url,
+    source: route.source,
     children: [...convertHooks(route.hooks)]
   }))
 }
