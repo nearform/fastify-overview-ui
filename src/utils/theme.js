@@ -19,6 +19,6 @@ export const colors = {
 }
 
 // COLOR AND STYLE
-export function getColor (node) {
+export function getColor(node) {
   return colors[node.type || NODE]
 }

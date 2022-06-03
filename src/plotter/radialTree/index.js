@@ -3,32 +3,24 @@ import * as d3 from 'd3'
 import { compact } from '../../utils/strings'
 import { getColor } from '../../utils/theme'
 
-export function shutdown (svgRef) {
+export function shutdown(svgRef) {
   const svgEl = d3.select(svgRef.current)
   svgEl.select('.canvas').selectChildren().remove()
 }
 
-export function updateSizes (
-  svgEl,
-  main,
-  canvas,
-  linkWidth,
-  data
-) {
+export function updateSizes(svgEl, main, canvas, linkWidth, data) {
   if (!data || !svgEl) {
     return
   }
 
-  const { width: containerWidth, height: containerHeight } = (
-    svgEl.node()
-  ).getBoundingClientRect()
+  const { width: containerWidth, height: containerHeight } = svgEl
+    .node()
+    .getBoundingClientRect()
 
   main.attr('width', containerWidth).attr('height', containerHeight)
 
   const sideSize = data.height * linkWidth // adds 1 to let enought place for labels
   const radius = sideSize / 2
-
-  console.log(sideSize)
 
   const shiftHorizontal = (sideSize + (containerWidth - sideSize)) / 2 // add sideSize because the 0 is the center
   const shiftVertical = (sideSize + (containerHeight - sideSize)) / 2
@@ -47,13 +39,13 @@ export function updateSizes (
   return { radius }
 }
 
-export function parseData (data) {
+export function parseData(data) {
   return d3.hierarchy(data, function (d) {
     return d.children
   })
 }
 
-export function getTree (data, radius) {
+export function getTree(data, radius) {
   const tree = d3
     .tree()
     .size([2 * Math.PI, radius])
@@ -61,10 +53,7 @@ export function getTree (data, radius) {
   return tree(data)
 }
 
-export function drawLines (
-  tree,
-  canvas
-) {
+export function drawLines(tree, canvas) {
   canvas
     .append('g')
     .attr('class', 'links')
@@ -91,12 +80,7 @@ export function drawLines (
     .attr('opacity', 1)
 }
 
-export function drawLabels (
-  tree,
-  canvas,
-  textSize,
-  setCurrentNode
-) {
+export function drawLabels(tree, canvas, textSize, setCurrentNode) {
   canvas
     .append('g')
     .attr('filter', 'url(#whiteOutlineEffect)')
@@ -122,8 +106,8 @@ export function drawLabels (
       d.data.name === 'Anonymous function'
         ? 'λ'
         : d.data.children.length
-          ? compact(d.data.name, textSize)
-          : d.data.name
+        ? compact(d.data.name, textSize)
+        : d.data.name
     )
     .attr(
       'transform',
@@ -166,10 +150,7 @@ export function drawLabels (
   // .attr("stroke-width", 3);
 }
 
-export function drawNodes (
-  tree,
-  canvas
-) {
+export function drawNodes(tree, canvas) {
   canvas
     .append('g')
     .selectAll('circle')
@@ -196,18 +177,12 @@ export function drawNodes (
     })
 }
 
-export function attachZoom (
-  svgEl,
-  main,
-  size
-) {
+export function attachZoom(svgEl, main) {
   svgEl.call(
     d3.zoom().scaleExtent([0.5, 4]).on('zoom', zoomed).on('zoom.wheel', zoomed)
   )
 
-  console.log(size)
-
-  function zoomed (e) {
+  function zoomed(e) {
     e.sourceEvent.preventDefault()
     main.attr('transform', e.transform)
   }

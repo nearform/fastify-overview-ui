@@ -6,11 +6,11 @@ export const DECORATORTYPE = Symbol('decoratorType')
 export const ROUTE = Symbol('route')
 export const CONNECTION = Symbol('connection')
 
-export function transformData (data, filters) {
+export function transformData(data, filters) {
   return filterChartNode(convertDataNodeToChartNode(data), filters)
 }
 
-function convertDataNodeToChartNode (node) {
+function convertDataNodeToChartNode(node) {
   return {
     name: node.name,
     type: NODE,
@@ -23,7 +23,7 @@ function convertDataNodeToChartNode (node) {
   }
 }
 
-function convertHooks (hooks) {
+function convertHooks(hooks) {
   return Object.keys(hooks)
     .map((key) => ({
       type: HOOKTYPE,
@@ -38,7 +38,7 @@ function convertHooks (hooks) {
     .filter((node) => node.children.length > 0)
 }
 
-function convertDecorators (decorators) {
+function convertDecorators(decorators) {
   return Object.keys(decorators)
     .map((key) => ({
       type: DECORATORTYPE,
@@ -53,7 +53,7 @@ function convertDecorators (decorators) {
     .filter((node) => node.children.length > 0)
 }
 
-function convertRoutes (routes) {
+function convertRoutes(routes) {
   return routes.map((route) => ({
     type: ROUTE,
     name: route.url,
@@ -62,7 +62,7 @@ function convertRoutes (routes) {
   }))
 }
 
-function filterChartNode (node, filters) {
+function filterChartNode(node, filters) {
   if ([NODE].includes(node.type)) {
     return {
       ...node,

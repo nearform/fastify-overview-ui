@@ -1,3 +1,4 @@
+import T from 'prop-types'
 import { useState, createContext, useContext, useEffect } from 'react'
 
 export const OverviewContext = createContext(undefined)
@@ -9,8 +10,9 @@ export const OverviewProvider = ({ children }) => {
     errors: null
   })
 
-  const fetchOverview = () => {
-    const data = fetch(`${window.location.origin}/json-overview`).then(response => response.json()).catch(error => console.log(error))
+  const fetchOverview = async () => {
+    const response = await fetch(`${window.location.origin}/json-overview-ui`)
+    const data = await response.json()
 
     if (data) {
       setOverview({
@@ -30,6 +32,10 @@ export const OverviewProvider = ({ children }) => {
       {children}
     </OverviewContext.Provider>
   )
+}
+
+OverviewProvider.propTypes = {
+  children: T.node
 }
 
 export const useOverview = () => useContext(OverviewContext)

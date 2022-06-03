@@ -1,4 +1,6 @@
-export default function PlotterFilterButton ({
+import T from 'prop-types'
+
+export default function PlotterFilterButton({
   active,
   onClick,
   color,
@@ -14,4 +16,11 @@ export default function PlotterFilterButton ({
       {children}
     </button>
   )
+}
+
+PlotterFilterButton.propTypes = {
+  active: T.bool,
+  onClick: T.func,
+  color: T.string,
+  children: T.node
 }
