@@ -4,7 +4,9 @@ const path = require('path')
 const AutoLoad = require('@fastify/autoload')
 
 module.exports = async function (fastify, opts) {
-  await fastify.register(require('fastify-overview'))
+  await fastify.register(require('fastify-overview'), {
+    addSource: true
+  })
   await fastify.register(require('../'))
 
   fastify.register(AutoLoad, {
