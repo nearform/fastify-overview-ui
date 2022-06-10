@@ -2,7 +2,7 @@ import * as d3 from 'd3'
 
 const BLOCK_SIZE = { width: 200, height: 50 }
 
-export function createNode (rootNode, data) {
+export function createNode(rootNode, data) {
   const nodes = rootNode
     .selectAll('node')
     .data(data.descendants())
@@ -38,12 +38,12 @@ export function createNode (rootNode, data) {
     .text(function (d) {
       return d.data.name
     })
-    .on('click', (d) => {
+    .on('click', function (d) {
       console.log('f', d.data)
     })
 }
 
-export function createLink (rootNode, data) {
+export function createLink(rootNode, data) {
   rootNode
     .selectAll('.link')
     .data(data.descendants().slice(1))
@@ -53,7 +53,7 @@ export function createLink (rootNode, data) {
     .attr('stroke-dasharray', '2')
     .attr('stroke', 'gray')
     .attr('fill', 'none')
-    .attr('d', function diagonal (d) {
+    .attr('d', function diagonal(d) {
       if (d.parent === data.descendants[0]) {
         return 'M' + d.y + ',' + d.x + ' ' + d.parent.y + ',' + d.parent.x
       } else {
@@ -79,7 +79,7 @@ export function createLink (rootNode, data) {
     })
 }
 
-export function zoomScale (svgEl, rootNode, size) {
+export function zoomScale(svgEl, rootNode, size) {
   svgEl.call(
     d3
       .zoom()
@@ -92,7 +92,7 @@ export function zoomScale (svgEl, rootNode, size) {
       .on('zoom.wheel', zoomed)
   )
 
-  function zoomed (e) {
+  function zoomed(e) {
     e.sourceEvent.preventDefault()
     rootNode.attr('transform', e.transform)
   }

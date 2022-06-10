@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 
 import { transformData } from '../utils/data'
 
-export default function useGraphData (data) {
+export default function useGraphData(data) {
   const [filters, setFilters] = useState({
     showDecorators: true,
     showRoutes: true,
@@ -10,7 +10,9 @@ export default function useGraphData (data) {
   })
 
   const chartData = useMemo(() => {
-    return transformData(data, filters)
+    if (data) {
+      return transformData(data, filters)
+    }
   }, [data, filters])
 
   return {

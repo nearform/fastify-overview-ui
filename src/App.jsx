@@ -11,17 +11,17 @@ const Layout = () => {
   const { chartData, filters, setFilters } = useGraphData(overview.value)
   const [currentNode, setCurrentNode] = useState('')
   return (
-    <div className='flex w-screen h-screen flex-col'>
+    <div className="flex w-screen h-screen flex-col">
       <Header {...{ filters, setFilters, currentNode }} />
       <RadialTree
         {...{ chartData, currentNode, setCurrentNode }}
-        className='w-full shadow-inner h-full'
+        className="w-full shadow-inner h-full"
       />
     </div>
   )
 }
 
-function App () {
+function App() {
   return (
     <OverviewProvider>
       <Layout />
