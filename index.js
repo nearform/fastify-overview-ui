@@ -8,7 +8,7 @@ module.exports = fp(
       prefix: '/fastify-overview-ui/',
       decorateReply: false
     })
-    fastify.get('/json-overview-ui', async () => fastify.overview())
+    await fastify.get('/json-overview-ui', async () => fastify.overview())
   },
   {
     fastify: '3.x',
