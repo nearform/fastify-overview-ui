@@ -5,7 +5,8 @@ module.exports = fp(
   async function (fastify) {
     await fastify.register(require('@fastify/static'), {
       root: path.join(__dirname, 'dist'),
-      prefix: '/fastify-overview-ui/'
+      prefix: '/fastify-overview-ui/',
+      decorateReply: false
     })
     fastify.get('/json-overview-ui', async () => fastify.overview())
   },
