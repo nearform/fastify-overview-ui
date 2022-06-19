@@ -7,7 +7,7 @@ module.exports = async function (fastify, opts) {
   await fastify.register(require('fastify-overview'), {
     addSource: true
   })
-  await fastify.register(require('../'))
+  await fastify.register(require(path.join(__dirname, '../')))
 
   fastify.register(AutoLoad, {
     dir: path.join(__dirname, 'plugins'),
