@@ -56,7 +56,7 @@ function convertDecorators(decorators) {
 function convertRoutes(routes) {
   return routes.map((route) => ({
     type: ROUTE,
-    name: route.url,
+    name: `${route.url} ${route.method}`,
     source: route.source,
     children: [...convertHooks(route.hooks)]
   }))
