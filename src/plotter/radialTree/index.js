@@ -102,13 +102,20 @@ export function drawLabels(tree, canvas, textSize, setCurrentNode) {
     .style('cursor', 'pointer')
     .style('-webkit-font-smoothing', 'grayscale')
 
-    .text((d) =>
-      d.data.name === 'Anonymous function'
-        ? 'λ'
-        : d.data.children.length
-        ? compact(d.data.name, textSize)
-        : d.data.name
-    )
+    .html((d) => {
+      if (d.data.name === 'Anonymous function') {
+        return 'λ'
+      }
+
+      if (d.data.children.length) {
+        const compacted = compact(d.data.name, textSize)
+        const isSmaller = compacted.length < d.data.name.length
+        const title = `<title>${d.data.name}</title>`
+        return isSmaller ? title + escapeHTML(compacted) : compacted
+      }
+
+      return d.data.name
+    })
     .attr(
       'transform',
       (d) => `
@@ -186,4 +193,19 @@ export function attachZoom(svgEl, main) {
     e.sourceEvent.preventDefault()
     main.attr('transform', e.transform)
   }
+}
+
+function escapeHTML(unsafe) {
+  return unsafe.replace(/[&<"']/gm, (c) => {
+    switch (c) {
+      case '&':
+        return '&amp;'
+      case '<':
+        return '&lt;'
+      case '"':
+        return '&quot;'
+      default:
+        return '&#039;'
+    }
+  })
 }
