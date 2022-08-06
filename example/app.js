@@ -3,11 +3,15 @@
 const path = require('path')
 const AutoLoad = require('@fastify/autoload')
 
-module.exports = async function (fastify, opts) {
+async function app(fastify, opts) {
   await fastify.register(require('fastify-overview'), {
     addSource: true
   })
   await fastify.register(require(path.join(__dirname, '../')))
+
+  fastify.addHook('onRequest', function globalHook(request, reply, done) {
+    done()
+  })
 
   fastify.register(AutoLoad, {
     dir: path.join(__dirname, 'plugins'),
@@ -19,3 +23,6 @@ module.exports = async function (fastify, opts) {
     options: Object.assign({}, opts)
   })
 }
+
+app[Symbol.for('fastify.display-name')] = 'App Name'
+module.exports = app
