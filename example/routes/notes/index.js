@@ -15,6 +15,13 @@ async function noteRoutes(fastify) {
   fastify.get('/list', async function () {
     return 'this is an example'
   })
+
+  fastify.register(function childNodePlugin(instance, opts, next) {
+    instance.get('/inheritance', async function () {
+      return 'done'
+    })
+    next()
+  })
 }
 
 noteRoutes[Symbol.for('fastify.display-name')] = 'Note Plugin'
