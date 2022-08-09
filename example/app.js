@@ -9,7 +9,7 @@ async function app(fastify, opts) {
   })
   await fastify.register(require(path.join(__dirname, '../')))
 
-  fastify.addHook('onRequest', async function globalHook(request, reply) {
+  fastify.addHook('onRequest', async function globalHook() {
     // do something
   })
 
