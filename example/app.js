@@ -9,8 +9,8 @@ async function app(fastify, opts) {
   })
   await fastify.register(require(path.join(__dirname, '../')))
 
-  fastify.addHook('onRequest', function globalHook(request, reply, done) {
-    done()
+  fastify.addHook('onRequest', async function globalHook(request, reply) {
+    // do something
   })
 
   fastify.register(AutoLoad, {
