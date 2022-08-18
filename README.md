@@ -37,7 +37,7 @@ await fastify.register(require('fastify-overview'), {...})
 await fastify.register(require('fastify-overview-ui'))
 ```
 
-The UI will be available at `{your app's url}/fastify-overview-ui`
+The UI will be available at `{your app's url}/fastify-overview-ui/`
 
 ## How to read the graph
 
