@@ -24,9 +24,11 @@ To lean how to read the graph, please read the following documentation.
 
 ## Setup
 
-This plugin requires `fastify-overview` to be installed
+```bash
+npm i fastify-overview fastify-overview-ui
+```
 
-- `npm i fastify-overview-ui`
+Note: This plugin requires `fastify-overview` to be installed ([usage instructions](https://github.com/Eomm/fastify-overview#usage)).
 
 ## Usage
 
@@ -35,7 +37,7 @@ await fastify.register(require('fastify-overview'), {...})
 await fastify.register(require('fastify-overview-ui'))
 ```
 
-The UI will be available at `{your app's url}/fastify-overview-ui`
+The UI will be available at `{your app's url}/fastify-overview-ui/`
 
 ## How to read the graph
 
