@@ -24,9 +24,11 @@ To lean how to read the graph, please read the following documentation.
 
 ## Setup
 
-This plugin requires `fastify-overview` to be installed
+```bash
+npm i fastify-overview fastify-overview-ui
+```
 
-- `npm i fastify-overview-ui`
+Note: This plugin requires `fastify-overview` to be installed ([usage instructions](https://github.com/Eomm/fastify-overview#usage)).
 
 ## Usage
 
