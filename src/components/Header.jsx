@@ -1,26 +1,44 @@
 import T from 'prop-types'
 
+import { useOverview } from '../store'
 import { DECORATOR, HOOK, ROUTE } from '../utils/data'
 import { colors } from '../utils/theme'
 import IconDecorator from './IconDecorator'
 import IconHook from './IconHook'
 import IconRoutes from './IconRoutes'
 import IconSave from './IconSave'
-import IconSun from './IconSun'
+// import IconSun from './IconSun'
 import LogoFastify from './LogoFastify'
 import PlotterFilterButton from './PlotterFilterButton'
 
 export default function Header({ filters, setFilters }) {
+  const { svgRef } = useOverview()
+  function downloadSvg() {
+    if (!svgRef.current) {
+      return
+    }
+    const serializer = new XMLSerializer()
+    const svgString = serializer.serializeToString(svgRef.current)
+    const blob = new Blob([svgString], { type: 'image/svg;charset=utf-8' })
+    const downloadUrl = URL.createObjectURL(blob)
+    const downloadLink = document.createElement('a')
+    downloadLink.href = downloadUrl
+    downloadLink.download = 'overview_diagram.svg'
+    downloadLink.click()
+  }
   return (
     <header className="shadow z-10 filter drop-shadow-2xl">
       <nav className="text-gray-900 flex justify-between p-4 items-center">
         <LogoFastify className="h-8 text-gray-900 " />
         <div>
           <div className="flex justify-end">
-            <button className="rounded-lg border border-gray-100 px-3 py-2 shadow font-bold text-sm uppercase mr-3 flex items-center">
+            {/*<button className="rounded-lg border border-gray-100 px-3 py-2 shadow font-bold text-sm uppercase mr-3 flex items-center">
               <IconSun />
-            </button>
-            <button className="rounded-lg border border-gray-100 px-3 py-2 shadow font-bold text-sm uppercase flex items-center">
+            </button>*/}
+            <button
+              className="rounded-lg border border-gray-100 px-3 py-2 shadow font-bold text-sm uppercase flex items-center"
+              onClick={downloadSvg}
+            >
               <IconSave />
             </button>
           </div>

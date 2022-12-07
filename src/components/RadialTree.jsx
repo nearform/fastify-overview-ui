@@ -1,8 +1,9 @@
 import * as d3 from 'd3'
-import { useEffect, useRef } from 'react'
+import { useEffect } from 'react'
 import T from 'prop-types'
 
 import { useWindowSize } from '../hooks/useWindowSize'
+import { useOverview } from '../store'
 import {
   attachZoom,
   drawLabels,
@@ -23,7 +24,7 @@ export default function RadialTree({
   currentNode,
   setCurrentNode
 }) {
-  const svgRef = useRef(null)
+  const { svgRef } = useOverview()
   const size = useWindowSize()
 
   useEffect(() => {
