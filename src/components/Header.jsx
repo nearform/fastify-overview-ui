@@ -7,7 +7,6 @@ import IconDecorator from './IconDecorator'
 import IconHook from './IconHook'
 import IconRoutes from './IconRoutes'
 import IconSave from './IconSave'
-// import IconSun from './IconSun'
 import LogoFastify from './LogoFastify'
 import PlotterFilterButton from './PlotterFilterButton'
 
@@ -32,9 +31,6 @@ export default function Header({ filters, setFilters }) {
         <LogoFastify className="h-8 text-gray-900 " />
         <div>
           <div className="flex justify-end">
-            {/*<button className="rounded-lg border border-gray-100 px-3 py-2 shadow font-bold text-sm uppercase mr-3 flex items-center">
-              <IconSun />
-            </button>*/}
             <button
               className="rounded-lg border border-gray-100 px-3 py-2 shadow font-bold text-sm uppercase flex items-center"
               onClick={downloadSvg}
