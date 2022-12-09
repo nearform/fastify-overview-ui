@@ -1,9 +1,10 @@
 import T from 'prop-types'
-import { useState, createContext, useContext, useEffect } from 'react'
+import { useState, createContext, useContext, useEffect, useRef } from 'react'
 
 export const OverviewContext = createContext(undefined)
 
 export const OverviewProvider = ({ children }) => {
+  const svgRef = useRef(null)
   const [overview, setOverview] = useState({
     value: null,
     isLoading: false,
@@ -28,7 +29,7 @@ export const OverviewProvider = ({ children }) => {
   }, [])
 
   return (
-    <OverviewContext.Provider value={{ overview, setOverview }}>
+    <OverviewContext.Provider value={{ overview, setOverview, svgRef }}>
       {children}
     </OverviewContext.Provider>
   )
