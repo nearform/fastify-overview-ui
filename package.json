@@ -36,7 +36,7 @@
     "fastify": "^4.4.0",
     "fastify-overview": "^3.1.0",
     "husky": "^8.0.1",
-    "lint-staged": "^14.0.1",
+    "lint-staged": "^15.0.1",
     "pre-commit": "^1.2.2",
     "prettier": "^3.0.1",
     "prop-types": "^15.8.1",
