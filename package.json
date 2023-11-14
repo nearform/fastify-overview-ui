@@ -1,7 +1,7 @@
 {
   "name": "fastify-overview-ui",
   "description": "UI for fastify-overview",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "workspaces": [
     "example"
   ],
