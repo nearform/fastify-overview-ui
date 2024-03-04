@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^18.0.0",
-    "@commitlint/config-conventional": "^18.0.0",
+    "@commitlint/config-conventional": "^19.0.3",
     "@vitejs/plugin-react": "^4.0.0",
     "d3": "^7.1.1",
     "eslint": "^8.18.0",
