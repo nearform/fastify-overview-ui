@@ -22,6 +22,6 @@
     "fastify-plugin": "^4.0.0"
   },
   "devDependencies": {
-    "tap": "^20.0.3"
+    "tap": "^21.0.0"
   }
 }
