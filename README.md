@@ -87,7 +87,7 @@ An example application is provided which can be used to develop the plugin local
 
 ## Radial mockups
 
-Design proposal can be found in [this Figma file](https://www.figma.com/file/tt4BtV637DtdJpfdhriBWR/Fastify?node-id=0%3A1).
+Design proposal can be found in [this Figma file](https://www.figma.com/design/gZbGaGkKyIrKEPK74gW03Q/Fastify?node-id=1401-711&t=j0qQflVrsJbSVCTc-1).
 
 ## License
 
