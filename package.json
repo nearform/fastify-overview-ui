@@ -18,7 +18,7 @@
     "test": "tap test"
   },
   "dependencies": {
-    "@fastify/static": "^7.0.0",
+    "@fastify/static": "^8.0.2",
     "fastify-plugin": "^5.0.1"
   },
   "devDependencies": {
