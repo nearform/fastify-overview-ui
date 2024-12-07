@@ -15,7 +15,7 @@
     "serve": "vite preview",
     "lint": "eslint . --ext=.js,.jsx",
     "prepare": "husky",
-    "test": "tap test"
+    "test": "node --test"
   },
   "dependencies": {
     "@fastify/static": "^7.0.0",
@@ -42,7 +42,6 @@
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tap": "^21.0.0",
     "vite": "^6.0.2"
   },
   "main": "index.js",

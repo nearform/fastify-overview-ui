@@ -1,10 +1,11 @@
-const tap = require('tap')
+const assert = require('node:assert')
+const { test } = require('node:test')
 const fs = require('fs')
 const path = require('path')
 const fastify = require('fastify')
 const plugin = require('../')
 
-tap.ok(
+assert.ok(
   fs.existsSync(path.join(__dirname, '../dist')),
   'please execute npm run build'
 )
@@ -20,24 +21,27 @@ async function build(opts = {}) {
   return app
 }
 
-tap.test('app works', async (t) => {
+test('app works', async (t) => {
   const app = await build()
   const response = await app.inject('/')
-  t.strictSame(response.json(), { hello: 'world' })
+  t.assert.deepStrictEqual(response.json(), { hello: 'world' })
 })
 
-tap.test('plugin root works', async (t) => {
+test('plugin root works', async (t) => {
   const app = await build()
   const response = await app.inject('/fastify-overview-ui/')
-  t.strictSame(response.statusCode, 200)
-  t.strictSame(response.headers['content-type'], 'text/html; charset=UTF-8')
+  t.assert.deepStrictEqual(response.statusCode, 200)
+  t.assert.deepStrictEqual(
+    response.headers['content-type'],
+    'text/html; charset=UTF-8'
+  )
 })
 
-tap.test('plugin json url works', async (t) => {
+test('plugin json url works', async (t) => {
   const app = await build()
   const response = await app.inject('/json-overview-ui')
-  t.strictSame(response.statusCode, 200)
-  t.strictSame(
+  t.assert.deepStrictEqual(response.statusCode, 200)
+  t.assert.deepStrictEqual(
     response.headers['content-type'],
     'application/json; charset=utf-8'
   )
