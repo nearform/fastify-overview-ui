@@ -18,7 +18,7 @@
     "@fastify/autoload": "^6.0.1",
     "fastify": "^4.4.0",
     "fastify-cli": "^7.0.1",
-    "fastify-overview": "^3.1.0",
+    "fastify-overview": "^4.0.0",
     "fastify-plugin": "^5.0.1"
   },
   "devDependencies": {
