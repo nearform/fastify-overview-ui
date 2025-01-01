@@ -13,7 +13,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "lint": "eslint . --ext=.js,.jsx",
+    "lint": "eslint",
     "prepare": "husky",
     "test": "node --test"
   },

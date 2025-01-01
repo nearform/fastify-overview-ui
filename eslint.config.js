@@ -1,14 +1,15 @@
-import js from '@eslint/js'
-import prettierRecommended from 'eslint-plugin-prettier/recommended'
-import globals from 'globals'
+const js = require('@eslint/js')
+const prettierRecommended = require('eslint-plugin-prettier/recommended')
+const globals = require('globals')
 
-export default [
+module.exports = [
   js.configs.recommended,
   prettierRecommended,
   {
     languageOptions: {
       globals: {
-        ...globals.node
+        ...globals.node,
+        ...globals.browser
       },
       ecmaVersion: 'latest',
       sourceType: 'module'
