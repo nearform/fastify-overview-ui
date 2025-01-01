@@ -33,7 +33,7 @@ test('plugin root works', async (t) => {
   t.assert.deepStrictEqual(response.statusCode, 200)
   t.assert.deepStrictEqual(
     response.headers['content-type'],
-    'text/html; charset=UTF-8'
+    'text/html; charset=utf-8'
   )
 })
 
