@@ -92,3 +92,5 @@ Design proposal can be found in [this Figma file](https://www.figma.com/design/g
 ## License
 
 Licensed under [MIT](./LICENSE).
+
+[![banner](https://raw.githubusercontent.com/nearform/.github/refs/heads/master/assets/os-banner-green.svg)](https://www.nearform.com/contact/?utm_source=open-source&utm_medium=banner&utm_campaign=os-project-pages)
