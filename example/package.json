@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "tap \"test/**/*.test.js\"",
+    "test": "node --test",
     "start": "fastify start -l info app.js",
     "dev": "fastify start -w -l info -P app.js"
   },
@@ -15,13 +15,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@fastify/autoload": "^6.0.1",
-    "fastify": "^4.4.0",
-    "fastify-cli": "^7.0.1",
-    "fastify-overview": "^3.1.0",
+    "@fastify/autoload": "^6.1.0",
+    "fastify": "^5.2.1",
+    "fastify-cli": "^7.3.0",
+    "fastify-overview": "^4.0.0",
     "fastify-plugin": "^5.0.1"
-  },
-  "devDependencies": {
-    "tap": "^21.0.0"
   }
 }

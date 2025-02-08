@@ -24,7 +24,7 @@ async function build(t) {
   const app = await buildApplication(argv, config())
 
   // tear down our app after we are done
-  t.teardown(app.close.bind(app))
+  t.after(() => app.close())
 
   return app
 }

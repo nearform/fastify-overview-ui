@@ -37,7 +37,7 @@ test('plugin root works', async () => {
   assert.strictEqual(response.statusCode, 200)
   assert.strictEqual(
     response.headers['content-type'],
-    'text/html; charset=UTF-8'
+    'text/html; charset=utf-8'
   )
 })
 
