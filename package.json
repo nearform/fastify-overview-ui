@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@fastify/static": "^9.0.0",
-    "fastify-plugin": "^5.1.0"
+    "fastify-plugin": "^6.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.0.0",
