@@ -18,7 +18,7 @@
     "test": "node --test"
   },
   "dependencies": {
-    "@fastify/static": "^9.0.0",
+    "@fastify/static": "^10.1.0",
     "fastify-plugin": "^6.0.0"
   },
   "devDependencies": {
