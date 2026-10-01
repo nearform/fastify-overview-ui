@@ -6,13 +6,19 @@ export default [
   js.configs.recommended,
   prettierRecommended,
   {
+    files: ['**/*.{js,jsx}'],
     languageOptions: {
       globals: {
         ...globals.node,
         ...globals.browser
       },
       ecmaVersion: 'latest',
-      sourceType: 'module'
+      sourceType: 'module',
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true
+        }
+      }
     }
   },
   {
