@@ -55,6 +55,6 @@
   },
   "homepage": "https://github.com/nearform/fastify-overview-ui#readme",
   "lint-staged": {
-    "*.js(x)": "eslint --cache --fix"
+    "*.{js,jsx}": "eslint --cache --fix"
   }
 }
